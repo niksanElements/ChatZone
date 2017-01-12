@@ -10,6 +10,8 @@ define(['jQuery'],function () {
             function(data, status){
                 if(status == 'success')
                     $("#message-tap").append(data);
+                var temp = document.getElementById("message-tap");
+                temp.scrollTop = temp.scrollHeight;
             });
     }
     var checkFriend = function() {
@@ -17,7 +19,6 @@ define(['jQuery'],function () {
         if(!(userTap === undefined)){
             var toUser = parseInt($(userTap).attr('id'));
             var date = $(".time").last().text();
-            console.log(date);
             if(date) {
                 postData(toUser, date);
             }

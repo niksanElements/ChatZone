@@ -13,6 +13,7 @@
                         <ul  id="friends"  class="dropdown-menu dropdown-cart"role="menu">
 
                         </ul>
+                        <div id="conversation-taps" class="col-lg-12 col-md-12 col-sm-12"></div>
                     </li>
                 </ul>
                 <div id="send-field" class="send-wrap col-lg-12 col-md-12 col-sm-12">

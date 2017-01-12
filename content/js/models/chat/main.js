@@ -2,4 +2,10 @@ define(['friends','send','newMessages','jQuery'],function (friends,send,newMessa
     friends();
     $("#send-btn").click(send);
     newMessages();
+
+    $("#send-text").keypress(function (e) {
+        if(e.which == 13){
+            send();
+        }
+    });
 });

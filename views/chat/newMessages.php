@@ -4,7 +4,7 @@
         <div class="media-body">
             <small id="date-message" class="pull-right time"><?= $message["date"]?></small>
             <h5  class="media-heading"><?= $message["userName"]?></h5>
-            <small class="col-lg-10"><?= $message["text"]?></small>
+            <small class="col-lg-10"><?= htmlspecialchars($message["text"])?></small>
         </div>
     </div>
 </div>
